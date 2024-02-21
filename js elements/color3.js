@@ -96,5 +96,19 @@ console.log(oktxt);
       hlspan.innerText= innerprice-(innerprice*15)/100;
     
  }
- 
+ else if (oktxt==='Couple20'){
+
+const hello=document.getElementById('price');
+     const innerprice= hello.innerText;
+     console.log(innerprice)
+    const hlspan=document.getElementById('hellospan');
+      hlspan.innerText= innerprice-(innerprice*20)/100;
+ }
+else{
+    const hello=document.getElementById('price');
+     const innerprice= hello.innerText;
+    const hlspan=document.getElementById('hellospan');
+    hlspan.innerText=innerprice;
 }
+ }
+
