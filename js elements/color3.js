@@ -1,8 +1,16 @@
+
+
+
+
+
+
+
 function change3(){
-    const ele= document.getElementById('A3')
+     document.getElementById('A3').style.background="green"
     
-    ele.classList.add('bg-[#1DD100]')
-    const irtto =ele.innerText;
+    // ele.classList.add('bg-black')
+    // console.log(ele.classList)
+    // const irtto =ele.innerText;
     const eleme= document.getElementById('hi-span')
     const txtt= eleme.innerText
     const valuee=parseInt(txtt)
@@ -15,9 +23,9 @@ function change3(){
     left.innerText=leftvalue ;
  //    const pera =document.getElementById('td1')
  //    pera.innerText= 'A1'
- 
- 
- }
+//  
+
+}
  function Data3(){
     var button = document.getElementById('A3');
 
@@ -40,7 +48,7 @@ function change3(){
      ECONOMY.textContent = 'economy';
  
      var MONEY = document.createElement('td');
-     MONEY.textContent = '500';
+     MONEY.textContent = '550';
  
      // Append the cells to the row
      newRow.appendChild(nameCell);
@@ -51,4 +59,42 @@ function change3(){
  
      // Append the new row to the table body
      tableBody.appendChild(newRow);
+     pricee3();
+    disableBtn3();
+
+      
+     
+ }
+ function disableBtn3() {
+    document.getElementById('A3').disabled=true;
+    
+   
+}
+function pricee3(){
+    var ticketPrice= document.getElementById('hi-span')
+    console.log(ticketPrice.innerText);
+  var pricy=ticketPrice.innerText;
+  console.log(pricy)
+
+var pricing= document.getElementById('price');
+ var okprice=pricing.innerText;
+ console.log(okprice)
+ okprice=parseInt(pricy);
+ price=550*okprice;
+pricing.innerText=price;
+
+}
+function voucher(){
+var grand=document.getElementById('havecpn');
+ var oktxt= grand.value;
+console.log(oktxt);
+ if(oktxt==='New15'){
+   const hello=document.getElementById('price');
+     const innerprice= hello.innerText;
+     console.log(innerprice)
+    const hlspan=document.getElementById('hellospan');
+      hlspan.innerText= innerprice-(innerprice*15)/100;
+    
+ }
+ 
 }
