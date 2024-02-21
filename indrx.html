@@ -24,7 +24,9 @@
   font-weight: <weight>;
   font-style: normal;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 </style>
 
 
@@ -84,7 +86,7 @@
                   <div class="max-w-md">
                     <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with<br><span class=" text-[#1DD100]">P Paribahan</span></h1>
                     <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                    <button class="btn bg-[#1DD100] text-xl text-black"> Buy Tickets</button>
+                    <button class="btn bg-[#1DD100] text-xl text-black"><a href="#sectionToScroll">Buy Tickets</a> </button>
                   </div>
                 </div>
               </div>
@@ -191,7 +193,7 @@
                 
             </div>
             <!-- seat plan here -->
-            <div class="gap-10 md:container mx-auto flex  lg:w-[1000px] lg:h-[500px] rounded-xl bg-[#FFFFFF] p-20 my-5">
+            <div id="sectionToScroll" class="gap-10 md:container mx-auto flex  lg:w-[1000px] lg:h-[500px] rounded-xl bg-[#FFFFFF] p-20 my-5">
              <!-- 1st div -->
              <div class="flex justify-between gap-20">
              <div class=" lg:w-2/3">
@@ -214,7 +216,7 @@
                     
                  </div>
                  <!-- seat main function start from here -->
-                 <div class="lg:grid grid-cols-5 w-full gap-10">
+                 <div  class="lg:grid grid-cols-5 w-full gap-10">
                     <div><h3 class="text-center">A</h3></div>
                     <div><button id="A1" class="btn" onclick="Data();change();">A1</button></div>
                     <div><button id="A2" class="btn" onclick="change2();Data2();">A2</button></div>
@@ -290,7 +292,24 @@
             </div>
 
             </section>
-            <section >
+
+            <footer class="footer p-10 bg-black text-neutral-content text-white">
+                <aside>
+                  
+                  <p class="font-extrabold text-2xl">P-Ticket</p>
+                  <p>P-Ticket is a digital platform to make your
+                    daily commuting better.</p>
+                </aside> 
+                <nav>
+                  <h6 class="text-2xl font-bold">Download Our App</h6> 
+                  <div class="grid grid-flow-col gap-4">
+                    <img src="images/playstore.png" alt="">
+                  </div>
+                 
+                </nav>
+                <hr class="border-dashed bg-blue-800 text-amber-100">
+              </footer>
+              <section >
                 <div id="hid" class="bg-white rounded-lg lg:w-full lg:h-[400px] hidden ">
                   <div class=" flex justify-center">
                     <img src="images/success.png" alt="">
@@ -301,11 +320,11 @@
                     </div>
                   <div class="flex justify-center my-4"><h3 class="text-xl text-center">Shortly you will find a confirmation in your email.</h3>
                     </div>
-                    <div class=" flex justify-center"><button class="btn bg-[#27AE60] rounded-full">Continue</button></div>
+                    <div class=" flex justify-center"><button class="btn bg-[#27AE60] rounded-full"><a href="http://127.0.0.1:5500/indrx.html">Continue</a></button></div>
 
                 </div>
 
-            </section>
+            </section> 
          <script src="js elements/color.js"></script>   
          <script src="js elements/color2.js"></script>
          <script src="js elements/color3.js"></script>

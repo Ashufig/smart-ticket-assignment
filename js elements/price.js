@@ -1,4 +1,4 @@
-function conti(){
-    const gat=document.getElementById('hid')
-    gat.classList.remove('hidden')
-}
+ function conti(){
+     const gat=document.getElementById('hid')
+     gat.classList.remove('hidden')
+ }
