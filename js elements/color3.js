@@ -88,7 +88,7 @@ function voucher(){
 var grand=document.getElementById('havecpn');
  var oktxt= grand.value;
 console.log(oktxt);
- if(oktxt==='New15'){
+ if(oktxt==='NEW15'){
    const hello=document.getElementById('price');
      const innerprice= hello.innerText;
      console.log(innerprice)
@@ -96,7 +96,7 @@ console.log(oktxt);
       hlspan.innerText= innerprice-(innerprice*15)/100;
     
  }
- else if (oktxt==='Couple20'){
+ else if (oktxt==='Couple 20'){
 
 const hello=document.getElementById('price');
      const innerprice= hello.innerText;
